@@ -1,0 +1,197 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+
+    Created on : May 11, 2015, 11:50:16 AM
+    Author     : bindunani */
+body{
+    background: url("images/bg-image.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display:block;
+    height:800px;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: Montserrate,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#topnote{
+    margin-top: 1%;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 5em;
+    color:#5C997A;
+}
+section{
+    display:block;
+    background:white;
+    padding: 15% 0;
+    height: 1000px;
+}
+.section-heading{
+    text-transform: uppercase;
+    padding:2px 0;
+    color:black;
+}
+p.section-paragraph{
+    letter-spacing: 1px;
+}
+/*.navbar-default{
+    position: fixed;
+}*/
+.nav{
+    background-color: transparent;
+    border:0px;
+    padding:-1px 0;
+    float:right;
+}
+nav .navbar-toggle{
+    margin:5px 5px 5px 0;
+}
+nav.shrink .navbar-toggle{
+    padding: 4px 5px;
+}
+.navbar-default .nav>li> a{
+    color:white;
+    font-family: Montserrate,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing:0.5px;
+    font-weight:400;
+    font-size:20px;
+}
+nav.navbar.shrink{
+    padding-top:0px;
+}
+nav.shrink li a{
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    font-size:10px;
+}
+nav.shrink #topnote{
+    padding-top: 15px;
+    font-size:3em;
+}
+ul.navmenu li:hover > a, nav#mynav li.active a
+{
+    background-color: #5C997A;
+}
+.form{
+    display:block;
+    margin-right:auto;
+    margin-left:10%;
+    margin-top:10px;
+    padding:1%;
+    color:white;
+}
+.form .signInSpnBtn{
+    margin-top:35px;
+    margin-bottom: 50px;
+}
+.form_input{
+    padding:10px 20px;
+    width:100%;
+    height:40px;
+    border-radius:30px;
+}
+
+#signIn_btn{
+    margin:10px;
+    background-color:white;
+    color:black;
+    border-radius: 6px;
+    width:40%;
+}
+.backbtn{
+    font-style:oblique;
+    color:white;
+}
+.backbtn:hover{
+    color:white;
+}
+.modal{
+    background-color:transparent;
+}
+.modal-content{
+    border: 1px solid white;
+    background-color: #5C997A;
+    opacity: 0.8;
+}
+#signUp_btn {
+    margin-top:50px;
+    background-color: #5C997A;
+    width:100%;
+    height:47px;
+    border-radius:30px;
+    padding:10px 20px;
+}
+.heading{
+    text-align: center;
+    color:white;
+}
+.heading > h4{
+    margin-top:5%;
+}
+.social_btn{
+    display: inline;
+    margin-top:50px;
+    margin-left:5%;
+    background-color: #6a85b2;
+    width:100%;
+    border-radius:30px;
+    padding:10px 20px;
+}
+.spn_btn{
+    margin-top:8%;
+    margin-left:5%;
+    margin-bottom: 5%;
+    color:white;
+    font-size: 1.0em;
+}
+.intro{
+    padding-top:40%;
+    padding-bottom:10%;
+    padding-left:40%;
+}
+.topBtn{
+    text-transform: uppercase;
+    background-color: #5C997A;
+    border-color: #5C997A;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding:20px 25px;
+    font-size:18px;
+    color:white;
+}
+#contact{
+    text-align:center;
+}
+#contactForm .form-control{
+    padding:27px 12px;
+}
+textarea.form-control{
+    height:200px;
+}
+.contactBtn{
+    padding:15px 25px;
+    color:white;
+    background-color: #5C997A;
+    border:1px solid #5C997A;
+    border-radius:5px;
+}
+.image_row{
+    padding:1%;
+}
+footer{
+    padding:25px 0;
+    text-align:center;
+}
+footer span.copyright{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+section:nth-child(odd){
+    background-color: whitesmoke;
+}
+section:nth-child(even){
+    background-color: #f0f0f0;
+}

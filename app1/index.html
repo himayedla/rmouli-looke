@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="">
+<head>
+    <title>My app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="mycss.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body id="index">
+<nav class="navbar navbar-default navbar-fixed-top nav" id="mynav" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#index"  id="topnote" class="navbar-brand">Start page</a>
+        </div>
+        <div class=" navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-pills navbar-brand navmenu">
+                    <li><a href="#login" data-toggle="modal" data-target="#logIn_modal">Login</a></li>
+                    <li><a href="#signup" data-toggle="modal" data-target="#signUp_modal">SignUp</a></li>
+                    <li><a href="#about" class="scroll">About</a></li>
+                    <li><a href="#services" class="scroll">Services</a></li>
+                    <li><a href="#team" class="scroll">Team</a></li>
+                    <li><a href="#contact" class="scroll">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="intro">
+        <a href="#services" role="button" class="btn btn-default btn-lg topBtn">Tell me more</a>
+    </div>
+</header>
+
+                <!-- Modal for Login -->
+<div class="container">
+<div class="modal fade bs-example-modal-lg"  id="logIn_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <a href="#" role="button" class="backbtn" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left icon"></span>Go Back</a>
+                    </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form class="form">
+                                    <div class="row">
+                                        <div class ="col-md-5">
+                                            <div class="form-group">
+                                                <label for="email">Email address</label>
+                                                <input type="email" class="form-control form_input" id="email" placeholder="Enter email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control form_input" id="password" placeholder="Password" required>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <button type="submit" class="btn btn-lg" id="signIn_btn">Sign In</button>
+                                            </div>
+                                        </div>
+                                        <div class="column-md-5 col-md-offset-2">
+                                            <div class="signInSpnBtn">
+                                                <a href="#" class="btn btn-primary btn-lg social_btn">Sign Up with Facebook</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-primary btn-lg social_btn">Sign Up with Google+</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <!--modal window for SingUp-->
+<div class="modal fade bs-example-modal-lg"  id="signUp_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <div class="container signUp">
+                    <div class="col-md-8">
+                    <div>
+                        <a href="#" role="button" class="backbtn" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-left icon"></span>Go Back</a>
+                    </div>
+                        <div class="heading">
+                            <h4>Sign Up Now</h4>
+                        </div>
+                        <div class="spn_btn">
+                            <span class="spn_btn"><a href="#" class="btn btn-primary btn-lg social_btn">Sign Up with Facebook</a></span>
+                            <span class="spn_btn">Or</span>
+                            <span class="spn_btn"><a href="#" class="btn btn-primary btn-lg social_btn">Sign Up with Google+</a></span>
+                        </div>
+
+                           <div class="col-md-12">
+                               <form class="form">
+                                   <div class="form-group form_row">
+                                       <label for="firstName">First Name</label>
+                                       <input type="text" class="form-control form_input" id="firstName" placeholder="First Name" required>
+                                   </div>
+                                   <div class="form-group form_row">
+                                       <label for="lastName">Last Name</label>
+                                       <input type="text" class="form-control form_input" id="lastName" placeholder="Last Name" required>
+                                   </div>
+                                   <div class="form-group form_row">
+                                       <label for="email1">Email Address</label>
+                                       <input type="email" class="form-control form_input" id="email1" placeholder="Email Address" required>
+                                   </div>
+                                   <div class="form-group form_row">
+                                       <label for="password1">Password</label>
+                                       <input type="password" class="form-control form_input" id="password1" placeholder="Password" required>
+                                   </div>
+                                   <div class="form-group form_row">
+                                       <label for="zipCode">Zip Code</label>
+                                       <input type="text" class="form-control form_input" id="zipCode" placeholder="Zip code" required>
+                                   </div>
+                                   <div class="form-group form_row">
+                                       <input class="btn btn-primary btn-lg btn-block" type="submit" id="signUp_btn" value="Sign Up">
+                                   </div>
+                               </form>
+
+                           </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="about">About page</section>
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center servicespg">
+                <h2 class="section-heading">Services</h2>
+                <p class="section-paragraph">Get Started[Configure your menu and <br>share it on any device,any site]</p>
+            </div>
+        </div>
+        <div class= "row image_row">
+            <div class="col-md-offset-1 col-md-2">
+                <img src="images/Clock-icon.png" alt="clock">
+            </div>
+            <div class="col-md-offset-2 col-md-2">
+                <img src="images/Restaurant-icon.png" alt="restaurant">
+            </div>
+            <div class=" col-md-offset-2 col-md-2">
+                <img src="images/Restaurant-icon.png" alt="Device">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="team">Team</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" text-center>
+                <h2 class="section-heading">Contact Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your message" id="message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <div id="success"></div>
+                        <button type="submit" class="contactBtn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2015</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="bootstrap/bootstrap-3.3.4-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/myjs.js" type="text/javascript"></script>
+<script src="js/angular.js" type="text/javascript"></script>
+</body>
+</html>
